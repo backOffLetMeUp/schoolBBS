@@ -1,0 +1,22 @@
+{
+    "name": "school_bbs_server",
+    "version": "1.0.0",
+    "description": "Server of SchoolBBS",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js",
+      "pro": "NODE_ENV=production node app.js"
+    },
+    "author": "sceley",
+    "license": "ISC",
+    "devDependencies": {
+      "body-parser": "^1.18.2",
+      "express": "^4.16.2",
+      "jsonwebtoken": "^8.1.0",
+      "mongoose": "^4.13.7",
+      "morgan": "^1.9.0",
+      "multer": "^1.3.0",
+      "nodemailer": "^4.4.1"
+    }
+  }
+  

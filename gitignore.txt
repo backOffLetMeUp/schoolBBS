@@ -1,0 +1,17 @@
+
+.DS_Store
+ 
+node_modules/
+client/node_modules
+client_dq/node_modules
+server/node_modules
+ 
+/dist/
+ 
+npm-debug.log*
+ 
+yarn-debug.log*
+ 
+yarn-error.log*
+ 
+ 

@@ -8,6 +8,10 @@ const Schema = mongoose.Schema({
 	},
 	tab: String,
 	title: String,
+	visible: {
+		type: Boolean,
+		default: true,
+	},
 	content: String,
 	pv: {
 		type: Number,

@@ -3,6 +3,7 @@ const verify = require('../../jwt').verify;
 
 module.exports = async (req, res) => {
 	let _user = req.body;
+	console.log("user", _user);
 	let userName = req.session.userName;
 	try {
 		await new Promise((resolve, reject) => {

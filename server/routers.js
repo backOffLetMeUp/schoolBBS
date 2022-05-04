@@ -24,6 +24,7 @@ const get_topic = require('./controllers/topic/get-topic');
 const get_topics = require('./controllers/topic/get-topics');
 const get_topiccount = require('./controllers/topic/get-topiccount');
 const topic_public = require('./controllers/topic/topic-public');
+const topic_delete = require('./controllers/topic/topic-delete');
 
 const verify = require('./controllers/verify');
 const seek_verifyCode = require('./controllers/seek-verifyCode');
@@ -42,6 +43,7 @@ router.post('/topic/comment', body_parser.json(), authjwt, comment);
 router.get('/topic/:id', get_topic);
 router.get('/topics', get_topics);
 router.get('/topiccount', get_topiccount);
+router.post('/topicdelete', topic_delete);
 
 
 router.post('/getVerifyCode', body_parser.json(), verify);
